@@ -27,7 +27,7 @@ class CheckoutController extends Controller
         }
 
         $cart = $request->session()->get('cart');
-        $stripe = new StripeClient('sk_test_51HHrFcI0FvzbwgnCxQU8xLosKHSoWebLRi39YnMEbQbqzlLmWREGJUnicd0D4Yldgo9PB6DkpDrRxRIJsjBQ5x2r00dRvcFSfk');
+        $stripe = new StripeClient('');
 
         try {
             $token = $stripe->tokens->create([
